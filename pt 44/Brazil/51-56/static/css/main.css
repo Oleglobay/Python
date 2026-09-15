@@ -1,0 +1,78 @@
+body {
+  background: #CEE1F0 !important;
+  margin: 0px;
+}
+
+footer {
+  margin-top: 10%;
+  background: #9DC4E1;
+  width: 100%;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  font-size: 1.25rem;
+  line-height: 2;
+}
+.navbar-brand img {
+  border: solid rgba(255, 255, 255, 0.25) 0.5px;
+  border-radius: 5px;
+}
+.nav-link{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.sticky-top {
+  background: #3b88c3 !important;
+}
+
+.bg-primary {
+  background: #6CA6D2 !important;
+}
+
+#loginForm {
+  margin-top: 100px !important;
+  background: #5497CB;
+  border-radius: 10px;
+  margin: auto;
+  width: 28%;
+  padding: 15px;
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+#loginForm input {
+  width: 100%;
+  border-radius: 5px;
+  border: solid rgba(255, 255, 255, 0.25) 1px;
+  background: #E6F0F8;
+  height: 35px;
+  color: black;
+}
+#loginForm p {
+  font-size: 15px;
+}
+
+#tip {
+  font-size: 13px;
+  color: #9DC4E1;
+}
+
+#sub {
+  width: 40% !important;
+  border: solid #9DC4E1 1px !important;
+  background: #5497CB !important;
+  color: White !important;
+  margin-bottom: 100px;
+}
+.row .card{
+  width: 16rem;
+  margin: 20px;
+  height: 25rem;
+}
+#home_card_block .card{
+  display: inline-block;
+  margin: 5px;
+}

@@ -1,0 +1,22 @@
+	<form name="login" method="post" action='/login'>
+	
+	<input type="text" name=username required placeholder="Username"><br>
+	<input type="password" name=password required placeholder="Password"><br>
+	<input type="submit" vaule="login">
+	</form>@app.errorhandler(401)
+
+
+
+
+def unauthorized(error):
+    return render_template("error.html"), 401
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template("page.html"), 404
+
+
+
+@app.route("/")
+def index():
+    return redirect(url_for("login"))

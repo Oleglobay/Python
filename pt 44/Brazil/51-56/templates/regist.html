@@ -1,0 +1,27 @@
+{% extends "empty.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content%}
+		<!--Form-->
+			<form id="loginForm" action="/register" method="POST">
+				<div class="container">
+					<h3>REGISTER</h3>
+					<p style="margin-bottom: 40px" id="tip">Please enter your information</p>
+					<input type="text" id="intEmail", name="email" required>
+					<p>Email</p>
+					<input type="text" id="intNick", name="nickname" required>
+					<p>Nickname</p>
+					<input type="password" id="intPassword" name="password" required>				
+					<p>Password</p>
+					<input type="password" id="intAgainPassword" name="againPassword" required>				
+					<p>Repeat Password</p>
+					<input type="text" id="intFirstName" name="fName" required>				
+					<p>First Name</p>
+					<input type="text" id="intSecondName" name="sName" required>				
+					<p>Second Name</p>
+					<input type="number" id="intAge" name="age" required>		
+					<input style="margin-top: 20px !important;" id="sub" type="submit" value="Regist">
+				</div>
+			</form>
+{% endblock %}

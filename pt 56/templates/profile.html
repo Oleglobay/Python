@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body>
+
+{% extends "layout.html" %}{% block content %}
+
+<p><b>name :</b>{{ name.get_name() }}</p>
+<p><b>last name :</b>{{ name.getlastName() }}</p>
+<p><b>age :</b>{{ name.get_age() }}</p>
+<p><b>email :</b>{{ name.get_email() }}</p>
+<p><b>tell :</b>{{ name.get_tell() }}</p>
+
+{% endblok %}
+</body>

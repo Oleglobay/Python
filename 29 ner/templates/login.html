@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title> name </title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<form action="/login" method="POST">
+			<div class="container">
+				<h2>Welcome To MailChud</h2>
+				<p>Create an account or <a href="">log in</a></p>
+				<p><label for="first_name">Email</label><br>
+				<input type="text" id="first_name" name="email" required></p>
+				<p><label for="email">Username</label><br>
+				<input type="text" id="first_name", name="name" required></p>
+				<p><label for="password">Password</label><br>
+				<input type="password" id="password" name="password" required>				
+				</p>
+				<p class="s">
+					<label> <input type="radio" name="s" value="male", required>Male</label>
+					<label> <input type="radio" name="s" value="female" required>Female</label>
+				</p>
+				<p><input type="checkbox" id="news" name="news" required>I don`t want to receive <a href="">promontional emails</a> from MailChud.</p>
+				<p>By clicking the "Sign Up" button, you are creating a MaiChud account, and you agree<br> to MailChud`s <a href=""> Terms of Use</a> and <a href="">Privacy Policy.</a></p>
+				<p id="sub" class="submit">
+					<input type="submit" value="Sign Up">
+				</p>
+			</div>
+		</form>
+	</body>
+</html>

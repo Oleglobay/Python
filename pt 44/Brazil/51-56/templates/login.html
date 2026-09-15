@@ -1,0 +1,20 @@
+{% extends "empty.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content%}
+		<!--Form-->
+			<form id="loginForm" action="/login" method="POST">
+				<div class="container">
+					<h3>LOGIN</h3>
+					<p style="margin-bottom: 40px" id="tip">Please enter your email and password</p>
+					<input type="text" id="intEmail", name="email" required>
+					<p>Email</p>
+					<input type="password" id="intPassword" name="password" required>				
+					<p>Password</p>
+					<div style="margin: 20px 0px 50px 0px" ><a href="#" id="tip">Forget password?</a></div>
+					<input id="sub" type="submit" value="Login">
+				</div>
+			</form>
+{% endblock %}
+		

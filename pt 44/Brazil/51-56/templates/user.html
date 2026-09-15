@@ -1,0 +1,26 @@
+{% extends "empty.html" %}
+
+{% block title %}Welcome, {{username}}{% endblock %}
+
+{% block content%}
+		<!--Form-->
+			<form id="loginForm" action="/user/{{name.get_nick}}" method="POST">
+				<div class="container">
+					<h3>USER</h3>
+					<p style="margin-bottom: 40px" id="tip">Here you can change your information</p>
+					<input value="{{name.get_firstName}}" type="text" id="intFirstName" name="fName" required>
+
+					<p>First Name</p>
+					<input value='{{name.get_lastName}}' type="text" id="intSecondName" name="sName" required>
+					<p>Second Name</p>
+					<input value="{{name.get_email}}" type="text" id="intEmail" name="email" required>
+					<p>Email</p>
+					<input value="{{name.get_nick}}" type="text" id="intNick" name="nickname" required>
+					<p>Nickname</p>
+					<input type="{{name.get_age}}" id="intAge" name="age" required>
+					<p>Age</p>
+					<input id="sub" type="submit" value="Save changes">
+				</div>
+			</form>
+{% endblock %}
+		

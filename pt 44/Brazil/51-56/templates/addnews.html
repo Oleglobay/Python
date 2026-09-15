@@ -1,0 +1,20 @@
+{% extends "empty.html" %}
+
+{% block title %}Add news{% endblock %}
+
+{% block content%}
+	<form id="loginForm" action="/add" method="POST">
+		<div class="container">
+			<h3>Add News</h3>
+			<p style="margin-bottom: 40px" id="tip">Please enter your email and password</p>
+			<input type="text" id="link", name="imageLink" required>
+			<p>Link for image</p>
+			<input  type="text" id="intEmail", name="name" required>
+			<p>Name</p>
+			<input style="height: 50px;" type="text" id="intText" name="post" required>	
+			<p>Text</p>
+			<div style="margin: 20px 0px 50px 0px" ><a href="#" id="tip">Have questions?</a></div>
+			<input id="sub" type="submit" value="Add">
+		</div>
+	</form>
+{% endblock %}
